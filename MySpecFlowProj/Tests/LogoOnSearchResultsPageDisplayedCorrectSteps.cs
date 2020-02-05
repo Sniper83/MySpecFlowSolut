@@ -19,8 +19,8 @@ namespace MySpecFlowProj.Tests
             BingMainPage = new FeatureSupport().GoToBingMainPage();
         }
         
-        [Given(@"I click on search text field")]
-        public void GivenIClickOnSearchTextField()
+        [Given(@"I click on the search text field")]
+        public void GivenIClickOnTheSearchTextField()
         {
             BingMainPage.SearchTextField.Click();
         }
@@ -37,8 +37,8 @@ namespace MySpecFlowProj.Tests
             BingMainPage.SearchTextField.SendKeys(Keys.Enter);
         }
         
-        [Then(@"the logo will be dispalayed")]
-        public void ThenTheLogoWillBeDispalayed()
+        [Then(@"the logo will be displayed")]
+        public void ThenTheLogoWillBeDisplayed()
         {
             SearchResultPage = new SearchResultPage();
             Assert.IsTrue(SearchResultPage.BingLogo.Displayed);

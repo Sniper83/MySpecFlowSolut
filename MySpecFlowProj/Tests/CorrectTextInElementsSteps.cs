@@ -17,8 +17,8 @@ namespace MySpecFlowProj.Tests
 
         private string ExpectedWebElementText { get; set; }
 
-        [Given(@"go to Bing main page")]
-        public void GivenOnlyOnceGoToBingMainPage()
+        [Given(@"I go to the main page of Bing site")]
+        public void GivenIGoToTheMainPageOfBingSite()
         {
             BingMainPage = new FeatureSupport().GoToBingMainPage();
         }
@@ -37,8 +37,8 @@ namespace MySpecFlowProj.Tests
             ExpectedWebElementText = Consts.TextsInElements[iWebElementName];
         }
 
-        [Then(@"I test that text of this element contains in list of texts")]
-        public void ThenITestThatTextOfThisElementContainsInListOfTexts()
+        [Then(@"I test that text of this element contains in the list of texts")]
+        public void ThenITestThatTextOfThisElementContainsInTheListOfTexts()
         {
             Assert.AreEqual(ActualWebElementText, ExpectedWebElementText);
         }

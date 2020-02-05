@@ -20,14 +20,14 @@ namespace MySpecFlowProj.Tests
             SearchResultPage = new FeatureSupport().GoToSearchResultPage(Consts.MeaningfulText);
         }
 
-        [Given(@"I get list of URLs in search results")]
-        public void GivenIGet()
+        [Given(@"I get a list of URLs in search results")]
+        public void GivenIGetAListOfURLsInSearchResults()
         {
             SearchResultsURLs = SearchResultPage.SearchResultsURLs;
         }
 
-        [Then(@"I test that every URL in search result contains in list of expected URLs")]
-        public void ThenITestThatEveryURLInSearchResultContainsIn()
+        [Then(@"I test that every URL in search result contains in the list of expected URLs")]
+        public void ThenITestThatEveryURLInSearchResultContainsInTheListOfExpectedURLs()
         {
             var allURLsAreCorrect = false;
 

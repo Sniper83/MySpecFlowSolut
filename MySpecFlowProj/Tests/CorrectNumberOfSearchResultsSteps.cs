@@ -13,20 +13,20 @@ namespace MySpecFlowProj.Tests
 
         private SearchResultPage SearchResultPage { get; set; }
 
-        [Given(@"I go to main page of Bing")]
-        public void GivenIGoToMainPageOfBing()
+        [Given(@"I go to the main page of Bing")]
+        public void GivenIGoToTheMainPageOfBing()
         {
             BingMainPage = new FeatureSupport().GoToBingMainPage();
         }
         
-        [Given(@"I click on search field")]
-        public void GivenIClickOnSearchField()
+        [Given(@"I click on the search field")]
+        public void GivenIClickOnTheSearchField()
         {
             BingMainPage.SearchTextField.Click();
         }
 
-        [Given(@"I type '(.*)' in search field")]
-        public void GivenITypeInSearchField(string searchText)
+        [Given(@"I type '(.*)' in the search field")]
+        public void GivenITypeInTheSearchField(string searchText)
         {
             BingMainPage.SearchTextField.SendKeys(searchText);
         }
@@ -36,9 +36,9 @@ namespace MySpecFlowProj.Tests
         {
             BingMainPage.SearchTextField.SendKeys(Keys.Enter);
         }
-        
-        [Then(@"number of search results will be (.*)")]
-        public void ThenNumberOfSearchResultsWillBe(int expNumOfResults)
+
+        [Then(@"the number of search results will be (.*)")]
+        public void ThenTheNumberOfSearchResultsWillBe(int expNumOfResults)
         {
             SearchResultPage = new SearchResultPage();
             var actualNumOfResults = SearchResultPage.SearchResults.Count;

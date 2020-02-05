@@ -35,8 +35,8 @@ namespace MySpecFlowProj.Tests
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "CorrectTextInElements", "\tTo be shure that some of bing main page elements have correct text\r\n\tI will get " +
-                    "this elements with Selenium methods\r\n\tAnd will test text attribute of them", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "CorrectTextInElements", "\tTo be sure that some of bing main page elements have the correct text\r\n\tI will g" +
+                    "et these elements with Selenium methods\r\n\tAnd will test text attribute of them", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -79,7 +79,7 @@ namespace MySpecFlowProj.Tests
 #line 6
 #line hidden
 #line 7
- testRunner.Given("go to Bing main page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I go to the main page of Bing site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
         }
         
@@ -125,7 +125,7 @@ this.FeatureBackground();
  testRunner.Given(string.Format("I get some {0}", element), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 12
- testRunner.Then("I test that text of this element contains in list of texts", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I test that text of this element contains in the list of texts", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

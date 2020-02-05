@@ -35,8 +35,8 @@ namespace MySpecFlowProj.Tests
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "LogoOnSearchResultsPageDisplayedCorrect", "\tTo be shure that Bing logo is visible on search results page\r\n\tAs user of bing.c" +
-                    "om\r\n\tI want test it visability", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "LogoOnSearchResultsPageDisplayedCorrect", "\tTo be sure that the Bing logo is visible on the search results page\r\n\tAs a user " +
+                    "of bing.com\r\n\tI want to test it visibility", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -84,13 +84,13 @@ namespace MySpecFlowProj.Tests
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add two numbers")]
+        [NUnit.Framework.DescriptionAttribute("Get the Bing logo on the search results page")]
         [NUnit.Framework.CategoryAttribute("mytag4")]
-        public virtual void AddTwoNumbers()
+        public virtual void GetTheBingLogoOnTheSearchResultsPage()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag4"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add two numbers", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get the Bing logo on the search results page", null, new string[] {
                         "mytag4"});
 #line 9
 this.ScenarioInitialize(scenarioInfo);
@@ -116,7 +116,7 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 10
- testRunner.Given("I click on search text field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I click on the search text field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 11
  testRunner.And("I type \'wave-particle duality\' text", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -125,7 +125,7 @@ this.FeatureBackground();
  testRunner.When("I press Enter", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 13
- testRunner.Then("the logo will be dispalayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the logo will be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

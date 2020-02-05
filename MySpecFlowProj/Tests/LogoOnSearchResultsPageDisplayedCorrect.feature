@@ -1,13 +1,13 @@
 ﻿Feature: LogoOnSearchResultsPageDisplayedCorrect
-	To be shure that Bing logo is visible on search results page
-	As user of bing.com
-	I want test it visability
+	To be sure that the Bing logo is visible on the search results page
+	As a user of bing.com
+	I want to test it visibility
 Background: 
 	Given I go to Bing main page
 
 @mytag4
-Scenario: Add two numbers
-	Given I click on search text field
+Scenario: Get the Bing logo on the search results page
+	Given I click on the search text field
 	And I type 'wave-particle duality' text
 	When I press Enter
-	Then the logo will be dispalayed
+	Then the logo will be displayed

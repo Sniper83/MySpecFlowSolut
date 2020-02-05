@@ -35,8 +35,8 @@ namespace MySpecFlowProj.Tests
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "CorrectNumberOfSearchResults", "\tTo be shure that Bing\'s search is working correct\r\n\tWhen I will search some text" +
-                    "\r\n\tI want to get correct number of search results", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "CorrectNumberOfSearchResults", "\tTo be sure that Bing\'s search is working correctly\r\n\tWhen I will search some tex" +
+                    "t\r\n\tI want to get the correct number of search results", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -79,19 +79,19 @@ namespace MySpecFlowProj.Tests
 #line 6
 #line hidden
 #line 7
- testRunner.Given("I go to main page of Bing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I go to the main page of Bing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 8
- testRunner.And("I click on search field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I click on the search field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add some text in search field")]
+        [NUnit.Framework.DescriptionAttribute("Add some text in the search field")]
         [NUnit.Framework.CategoryAttribute("mytag")]
         [NUnit.Framework.TestCaseAttribute("\'wave-particle duality\'", "10", null)]
         [NUnit.Framework.TestCaseAttribute("\'klajhsdkajhsfihuaisujhdkajshdkjahsdiasdihi\'", "0", null)]
-        public virtual void AddSomeTextInSearchField(string text, string number, string[] exampleTags)
+        public virtual void AddSomeTextInTheSearchField(string text, string number, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "mytag"};
@@ -100,7 +100,7 @@ namespace MySpecFlowProj.Tests
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             string[] tagsOfScenario = @__tags;
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add some text in search field", null, @__tags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add some text in the search field", null, @__tags);
 #line 11
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -125,13 +125,13 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 12
- testRunner.Given(string.Format("I type {0} in search field", text), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given(string.Format("I type {0} in the search field", text), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 13
  testRunner.When("I press Enter key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 14
- testRunner.Then(string.Format("number of search results will be {0}", number), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("the number of search results will be {0}", number), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

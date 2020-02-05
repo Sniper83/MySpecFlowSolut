@@ -84,13 +84,13 @@ namespace MySpecFlowProj.Tests
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Assertion that URLs are correct")]
+        [NUnit.Framework.DescriptionAttribute("The assertion that URLs are correct")]
         [NUnit.Framework.CategoryAttribute("mytag2")]
-        public virtual void AssertionThatURLsAreCorrect()
+        public virtual void TheAssertionThatURLsAreCorrect()
         {
             string[] tagsOfScenario = new string[] {
                     "mytag2"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Assertion that URLs are correct", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The assertion that URLs are correct", null, new string[] {
                         "mytag2"});
 #line 10
 this.ScenarioInitialize(scenarioInfo);
@@ -116,10 +116,10 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 11
- testRunner.Given("I get list of URLs in search results", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I get a list of URLs in search results", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 12
- testRunner.Then("I test that every URL in search result contains in list of expected URLs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I test that every URL in search result contains in the list of expected URLs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

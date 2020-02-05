@@ -26,9 +26,9 @@ namespace MySpecFlowProj.Tests
         }
         
         [Given(@"I type '(.*)' text")]
-        public void GivenITypeText(string p0)
+        public void GivenITypeText(string text)
         {
-            BingMainPage.SearchTextField.SendKeys("wave-particle duality");
+            BingMainPage.SearchTextField.SendKeys(text);
         }
         
         [When(@"I press Enter")]

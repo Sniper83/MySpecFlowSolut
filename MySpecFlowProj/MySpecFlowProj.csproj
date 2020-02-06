@@ -178,6 +178,7 @@
     <Compile Include="Tests\CorrectTextInElementsSteps.cs" />
     <Compile Include="Tests\CorrectURLsInSearchResultsSteps.cs" />
     <Compile Include="Tests\LogoOnSearchResultsPageDisplayedCorrectSteps.cs" />
+    <Compile Include="Tests\QuitDriver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

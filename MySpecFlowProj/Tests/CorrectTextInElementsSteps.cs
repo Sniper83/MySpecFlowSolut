@@ -42,12 +42,5 @@ namespace MySpecFlowProj.Tests
         {
             Assert.AreEqual(ActualWebElementText, ExpectedWebElementText);
         }
-
-        [AfterTestRun]
-        public static void AfterTestRun()
-        {
-            Driver.Browser.Quit();
-        }
-
     }
 }
